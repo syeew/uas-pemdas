@@ -1,0 +1,46 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+
+int main() {
+ float X[100];
+ float Y[100];
+ int i, ulang;
+
+	cout << "  Trisha Azzahra P            " << endl ;
+	cout << "  152021167                   " << endl ;
+	cout << endl;
+	
+  // Deklarasi konstanta n untuk jumlah pasangan elemen dari array
+  const int n = 2;
+
+  // Deklarasi array x dan x dengan jumlah elemen sebanyak N
+  int x[n], y[n];
+
+  // Input elemen array x dan y
+  for (int i = 0; i < n; i++) {
+    cout << "Masukan Data X ke-" << i+1 << " : " ; cin >>x[i];
+ 	cout << "Masukan Data Y ke-" << i+1 << " : " ; cin >>y[i];
+ 	cout << endl;
+  }
+  // sigma x
+  for (int i = 0; i < n; i++) {
+    cout << x[i] + x[i] << endl;
+  }
+  
+  // sigma y
+  for (int i = 0; i < n; i++) {
+    cout << y[i] + y[i] << endl;
+  }
+
+  // menghitung xy
+  for (int i = 0; i < n; i++) {
+    cout << x[i] * y[i] << endl;
+  }
+  
+
+  
+  return 0;
+}
